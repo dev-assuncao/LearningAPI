@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj": {}
+    "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaAPICore\\MinhaAPICore\\MinhaAPICore.csproj": {}
   },
   "projects": {
-    "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj": {
+    "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaAPICore\\MinhaAPICore\\MinhaAPICore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
-        "projectName": "MinhaPrimeiraAPI",
-        "projectPath": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+        "projectUniqueName": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaAPICore\\MinhaAPICore\\MinhaAPICore.csproj",
+        "projectName": "MinhaAPICore",
+        "projectPath": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaAPICore\\MinhaAPICore\\MinhaAPICore.csproj",
         "packagesPath": "C:\\Users\\Davisson\\.nuget\\packages\\",
-        "outputPath": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI\\obj\\",
+        "outputPath": "D:\\Davisson\\FORMACAO REST com ASP.NET Core WebAPI\\MinhaAPICore\\MinhaAPICore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,20 +49,32 @@
               "version": "[2.2.0, )",
               "autoReferenced": true
             },
-            "Microsoft.AspNetCore.Mvc.Api.Analyzers": {
-              "target": "Package",
-              "version": "[2.2.6, )"
-            },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             }
           },
           "imports": [
