@@ -1,0 +1,7 @@
+use apidbcontext;
+
+insert into Fornecedores 
+VALUES ('677e3d83-ac12-464c-b2f4-3be50916334d', 'Davisson Assuncao', '12345678910', '1', 'true');
+
+
+select * from Fornecedores;
