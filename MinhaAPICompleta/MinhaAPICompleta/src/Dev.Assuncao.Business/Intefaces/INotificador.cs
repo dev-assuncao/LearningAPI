@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using DevIO.Business.Notificacoes;
+using Dev.Assuncao.Notificacoes;
 
-namespace DevIO.Business.Intefaces
+namespace Dev.Assuncao.Intefaces
 {
     public interface INotificador
     {

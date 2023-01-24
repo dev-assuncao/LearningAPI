@@ -1,7 +1,8 @@
-﻿using DevIO.Business.Models.Validations.Documentos;
+﻿using Dev.Assuncao.Models;
+using Dev.Assuncao.Models.Validations.Documentos;
 using FluentValidation;
 
-namespace DevIO.Business.Models.Validations
+namespace Dev.Assuncao.Business.Models.Validations
 {
     public class FornecedorValidation : AbstractValidator<Fornecedor>
     {

@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Assuncao.API", "src\Dev.Assuncao.API\Dev.Assuncao.API.csproj", "{D775E131-66C6-4A06-8133-C59A423BD603}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.Assuncao.API", "src\Dev.Assuncao.API\Dev.Assuncao.API.csproj", "{D775E131-66C6-4A06-8133-C59A423BD603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Assuncao.Business", "src\Dev.Assuncao.Business\Dev.Assuncao.Business.csproj", "{469E9A60-040D-491A-A378-0B0914CC2DB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.Assuncao.Business", "src\Dev.Assuncao.Business\Dev.Assuncao.Business.csproj", "{469E9A60-040D-491A-A378-0B0914CC2DB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dev.Assuncao.Data", "src\Dev.Assuncao.Data\Dev.Assuncao.Data.csproj", "{B8D14860-5FC8-497A-B361-05560BA2F0D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dev.Assuncao.Data", "src\Dev.Assuncao.Data\Dev.Assuncao.Data.csproj", "{B8D14860-5FC8-497A-B361-05560BA2F0D3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{469E9A60-040D-491A-A378-0B0914CC2DB3} = {469E9A60-040D-491A-A378-0B0914CC2DB3}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C061E6D6-6505-454B-8D74-DB42BFAB3B05}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DevIO.Business.Models
+namespace Dev.Assuncao.Models
 {
     public class Produto : Entity
     {

@@ -1,8 +1,8 @@
-﻿using DevIO.Business.Models;
+﻿using Dev.Assuncao.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DevIO.Data.Mappings
+namespace Dev.Assuncao.Data.Mappings
 {
     public class EnderecoMapping : IEntityTypeConfiguration<Endereco>
     {

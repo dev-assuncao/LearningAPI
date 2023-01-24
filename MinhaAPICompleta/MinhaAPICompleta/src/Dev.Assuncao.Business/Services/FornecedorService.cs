@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using DevIO.Business.Intefaces;
-using DevIO.Business.Models;
-using DevIO.Business.Models.Validations;
+using Dev.Assuncao.Business.Models.Validations;
+using Dev.Assuncao.Intefaces;
+using Dev.Assuncao.Models;
+using Dev.Assuncao.Models.Validations;
+using Dev.Assuncao.Services;
 
-namespace DevIO.Business.Services
+namespace Dev.Assuncao.Business.Services
 {
     public class FornecedorService : BaseService, IFornecedorService
     {

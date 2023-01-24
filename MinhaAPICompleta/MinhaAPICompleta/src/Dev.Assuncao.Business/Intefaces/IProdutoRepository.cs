@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using DevIO.Business.Models;
+using Dev.Assuncao.Models;
 
-namespace DevIO.Business.Intefaces
+namespace Dev.Assuncao.Intefaces
 {
     public interface IProdutoRepository : IRepository<Produto>
     {

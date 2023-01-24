@@ -2,10 +2,10 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using DevIO.Business.Models;
+using Dev.Assuncao.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevIO.Data.Context
+namespace Dev.Assuncao.Data.Context
 {
     public class MeuDbContext : DbContext
     {

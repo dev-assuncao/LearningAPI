@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace DevIO.Business.Models.Validations.Documentos
+namespace Dev.Assuncao.Models.Validations.Documentos
 {
     public class CpfValidacao
     {

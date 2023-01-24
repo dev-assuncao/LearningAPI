@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DevIO.Business.Intefaces;
-using DevIO.Business.Models;
-using DevIO.Data.Context;
+using Dev.Assuncao.Data.Context;
+using Dev.Assuncao.Intefaces;
+using Dev.Assuncao.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DevIO.Data.Repository
+namespace Dev.Assuncao.Data.Repository
 {
     public class ProdutoRepository : Repository<Produto>, IProdutoRepository
     {

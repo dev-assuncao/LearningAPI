@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DevIO.Business.Models
+namespace Dev.Assuncao.Models
 {
     public class Fornecedor : Entity
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using DevIO.Business.Intefaces;
+using Dev.Assuncao.Intefaces;
 
-namespace DevIO.Business.Notificacoes
+namespace Dev.Assuncao.Notificacoes
 {
     public class Notificador : INotificador
     {

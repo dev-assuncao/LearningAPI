@@ -1,10 +1,10 @@
-﻿using DevIO.Business.Intefaces;
-using DevIO.Business.Models;
-using DevIO.Business.Notificacoes;
+﻿using Dev.Assuncao.Intefaces;
+using Dev.Assuncao.Models;
+using Dev.Assuncao.Notificacoes;
 using FluentValidation;
 using FluentValidation.Results;
 
-namespace DevIO.Business.Services
+namespace Dev.Assuncao.Services
 {
     public abstract class BaseService
     {
