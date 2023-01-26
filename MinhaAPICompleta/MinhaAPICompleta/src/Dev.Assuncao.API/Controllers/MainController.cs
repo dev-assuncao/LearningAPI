@@ -1,4 +1,5 @@
 ﻿using Dev.Assuncao.API.ViewModels;
+using Dev.Assuncao.Intefaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -15,20 +16,5 @@ namespace Dev.Assuncao.API.Controllers
         //validação de modelstate
 
         //validacao da operacao de negocios
-    }
-
-
-    [Route("api/fornecedores")]
-    public class FornecedoresController : MainController
-    {
-        public async Task<ActionResult<IEnumerable<FornecedorViewModel>>> ObterTodos()
-        {
-
-
-
-
-
-            return Ok();
-        }
     }
 }

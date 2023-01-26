@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using DevIO.Business.Intefaces;
-using DevIO.Business.Models;
-using DevIO.Business.Models.Validations;
+using Dev.Assuncao.Business.Models.Validations;
+using Dev.Assuncao.Intefaces;
+using Dev.Assuncao.Models;
+using Dev.Assuncao.Services;
 
 namespace DevIO.Business.Services
 {
