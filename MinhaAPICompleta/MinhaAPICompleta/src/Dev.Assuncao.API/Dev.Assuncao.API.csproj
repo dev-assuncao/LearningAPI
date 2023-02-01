@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Dev.Assuncao.Data\Dev.Assuncao.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\imagens\" />
+  </ItemGroup>
+
 </Project>
