@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -131,8 +132,5 @@
       }
     }
   },
-  "defaultProject": "demo-webapi",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "demo-webapi"
 }

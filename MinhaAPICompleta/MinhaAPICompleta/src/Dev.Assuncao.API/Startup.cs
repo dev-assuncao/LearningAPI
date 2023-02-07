@@ -29,15 +29,10 @@ namespace Dev.Assuncao.API
             });
 
             services.AddAutoMapper(typeof(Startup));
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-
-            services.Configure<ApiBehaviorOptions>(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
-            });
 
             services.ResolveDependencies();
+
+            services.WebApiConfig();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,8 +48,7 @@ namespace Dev.Assuncao.API
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvcConfiguration();
         }
     }
 }
