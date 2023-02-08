@@ -3,6 +3,7 @@ using Dev.Assuncao.API.ViewModels;
 using Dev.Assuncao.Data.Repository;
 using Dev.Assuncao.Intefaces;
 using Dev.Assuncao.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System;
@@ -11,8 +12,9 @@ using System.Threading.Tasks;
 
 namespace Dev.Assuncao.API.Controllers
 {
-
+    [Authorize]
     [Route("api/fornecedores")]
+
     public class FornecedoresController : MainController
     {
 
@@ -32,7 +34,7 @@ namespace Dev.Assuncao.API.Controllers
             _enderecoRepository = enderecoRepository;
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IEnumerable<FornecedorViewModel>> ObterTodos()
         {
