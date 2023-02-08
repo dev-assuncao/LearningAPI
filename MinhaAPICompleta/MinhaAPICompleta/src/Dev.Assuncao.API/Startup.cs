@@ -28,6 +28,8 @@ namespace Dev.Assuncao.API
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.IdentityConfiguration(Configuration);
+
             services.AddAutoMapper(typeof(Startup));
 
             services.ResolveDependencies();
@@ -48,6 +50,8 @@ namespace Dev.Assuncao.API
                 app.UseHsts();
             }
 
+
+            app.UseAuthentication();
             app.UseMvcConfiguration();
         }
     }
