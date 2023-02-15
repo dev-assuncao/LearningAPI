@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using Dev.Assuncao.API.Extensions;
 
 namespace Dev.Assuncao.API.Controllers
 {

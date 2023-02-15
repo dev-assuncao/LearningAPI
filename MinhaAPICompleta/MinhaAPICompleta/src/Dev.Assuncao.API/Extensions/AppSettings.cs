@@ -1,4 +1,4 @@
-﻿namespace Dev.Assuncao.API.ViewModels
+﻿namespace Dev.Assuncao.API.Extensions
 {
     public class AppSettings
     {

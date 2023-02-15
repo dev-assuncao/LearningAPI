@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Dev.Assuncao.API.Data;
 using Microsoft.AspNetCore.Identity;
 using Dev.Assuncao.API.Extensions;
-using Dev.Assuncao.API.ViewModels;
 using System;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -40,15 +39,15 @@ namespace Dev.Assuncao.API.Configuration
 
             services.AddAuthentication(x =>
             {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; //toda vez que autenticar, é para gerar um token
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; //toda vez que validar, vai verificar se está autenticado
             }).AddJwtBearer(x =>
             {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
+                x.RequireHttpsMetadata = false; // garantia que vai ser apenas https.
+                x.SaveToken = true; //
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuerSigningKey = true,
+                    ValidateIssuerSigningKey = true, //quem emitiu é o mesmo que a chave.
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
                     ValidateAudience = true,
