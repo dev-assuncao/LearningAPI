@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using Dev.Assuncao.API.Extensions;
 using System.Security.Claims;
+using System.Linq;
 
 namespace Dev.Assuncao.API.Controllers
 {
@@ -82,7 +83,7 @@ namespace Dev.Assuncao.API.Controllers
 
 
 
-        private async Task<string> GerarJwt(string email)
+        private async Task<LoginResponseViewModel> GerarJwt(string email)
         {
 
             var user = await _userManager.FindByEmailAsync(email);
@@ -118,7 +119,21 @@ namespace Dev.Assuncao.API.Controllers
 
 
             var encodedToken = tokenHandler.WriteToken(token);
-            return encodedToken;
+
+
+            var response = new LoginResponseViewModel
+            {
+                AccessToken = encodedToken,
+                ExpiresIn = TimeSpan.FromHours(_appSettings.ExpiracaoHoras).TotalSeconds,
+                UserToken = new UserTokenViewModel
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Claims = claims.Select(c => new ClaimViewModel { Type = c.Type, Value = c.Value})
+                }
+            };
+
+            return response;
         }
 
         private static long ToUnixEpochDate(DateTime date)
