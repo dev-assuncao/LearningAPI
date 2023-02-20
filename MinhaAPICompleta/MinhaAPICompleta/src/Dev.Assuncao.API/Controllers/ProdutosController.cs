@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using Dev.Assuncao.API.Extensions;
 using Dev.Assuncao.API.ViewModels;
 using Dev.Assuncao.Intefaces;
 using Dev.Assuncao.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -12,6 +14,7 @@ using System.Threading.Tasks;
 namespace Dev.Assuncao.API.Controllers
 {
 
+    [Authorize]
     [Route("api/produtos")]
     public class ProdutosController : MainController
     {
@@ -48,6 +51,7 @@ namespace Dev.Assuncao.API.Controllers
         }
 
 
+        [ClaimsAuthorize("Produto", "Adicionar")]
         [HttpPost]
         public async Task<ActionResult<ProdutoViewModel>> Adicionar(ProdutoViewModel produtoViewModel)
         {
@@ -68,6 +72,7 @@ namespace Dev.Assuncao.API.Controllers
             return CustomResponse(produtoViewModel);
         }
 
+        [ClaimsAuthorize("Produto", "Atualizar")]
         [HttpPut("{id:guid}")]
         public async Task<IActionResult> Atualizar(Guid id, ProdutoViewModel produtoViewModel)
         {
@@ -102,7 +107,7 @@ namespace Dev.Assuncao.API.Controllers
             return CustomResponse(produtoViewModel);
         }
 
-
+        [ClaimsAuthorize("Produto", "Excluir")]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<ProdutoViewModel>> Excluir(Guid id)
         {
@@ -138,11 +143,6 @@ namespace Dev.Assuncao.API.Controllers
 
             return true;
         }
-
-
-
-
-
 
 
         public async Task<ProdutoViewModel> ObterProduto(Guid id)
