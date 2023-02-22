@@ -1,4 +1,4 @@
-import { __decorate, __metadata } from "tslib";
+import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
@@ -7,8 +7,7 @@ var AppComponent = /** @class */ (function () {
         Component({
             selector: 'app-root',
             templateUrl: './app.component.html'
-        }),
-        __metadata("design:paramtypes", [])
+        })
     ], AppComponent);
     return AppComponent;
 }());

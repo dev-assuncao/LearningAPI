@@ -62,8 +62,8 @@ namespace Dev.Assuncao.API.Controllers
             return CustomResponse(registerUser);
         }
 
-        [HttpPost("login")]
-        public async Task<ActionResult> Login(LoginUserViewModel loginUser)
+        [HttpPost("entrar")]
+        public async Task<ActionResult> Entrar(LoginUserViewModel loginUser)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
 
